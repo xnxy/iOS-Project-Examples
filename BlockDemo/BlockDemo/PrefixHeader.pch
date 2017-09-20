@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  BlockDemo
+//
+//  Created by dev on 2017/9/19.
+//  Copyright © 2017年 dev. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//block
+#import <BlocksKit/BlocksKit.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+//AutoLayout
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#endif /* PrefixHeader_pch */

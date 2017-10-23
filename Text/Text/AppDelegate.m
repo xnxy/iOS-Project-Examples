@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import <UMSocialCore/UMSocialCore.h>
+
 
 @interface AppDelegate ()
 
@@ -28,6 +28,7 @@
     
     
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

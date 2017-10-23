@@ -22,6 +22,10 @@ typedef void(^Message)(NSString *str);
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"oyyx" ofType:@"png"];
+    
+    NSLog(@"----path:%@-----",path);
+    
 //    //初始block
 //    self.message = ^(NSString *str) {
 //        NSLog(@"----%@---",str);
@@ -32,7 +36,7 @@ typedef void(^Message)(NSString *str);
 //        self.message(@"作为属性的Block");
 //    });
     
-    [self variableBlock];
+//    [self variableBlock];
     
 }
 

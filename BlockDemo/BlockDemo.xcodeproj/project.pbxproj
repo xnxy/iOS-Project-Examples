@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		530B6AECEDA190CCAE3F13A0 /* Pods_BlockDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E130BB161834B874A767126 /* Pods_BlockDemo.framework */; };
+		D790F1261F9DE761008E7B4C /* oyyx.png in Resources */ = {isa = PBXBuildFile; fileRef = D790F1251F9DE761008E7B4C /* oyyx.png */; };
 		D79999D61F70F56D0068472C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D79999D51F70F56D0068472C /* main.m */; };
 		D79999D91F70F56D0068472C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D79999D81F70F56D0068472C /* AppDelegate.m */; };
 		D79999DC1F70F56D0068472C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79999DB1F70F56D0068472C /* ViewController.m */; };
@@ -40,6 +41,7 @@
 		3E130BB161834B874A767126 /* Pods_BlockDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4847811913945A0DE34C6566 /* Pods-BlockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlockDemo/Pods-BlockDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		86233D39066E96029D018714 /* Pods-BlockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlockDemo/Pods-BlockDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D790F1251F9DE761008E7B4C /* oyyx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oyyx.png; sourceTree = "<group>"; };
 		D79999D11F70F56D0068472C /* BlockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79999D51F70F56D0068472C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D79999D71F70F56D0068472C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		D79999D31F70F56D0068472C /* BlockDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D790F1251F9DE761008E7B4C /* oyyx.png */,
 				D79999D71F70F56D0068472C /* AppDelegate.h */,
 				D79999D81F70F56D0068472C /* AppDelegate.m */,
 				D79999DA1F70F56D0068472C /* ViewController.h */,
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D790F1261F9DE761008E7B4C /* oyyx.png in Resources */,
 				D79999E41F70F56D0068472C /* LaunchScreen.storyboard in Resources */,
 				D79999E11F70F56D0068472C /* Assets.xcassets in Resources */,
 				D79999DF1F70F56D0068472C /* Main.storyboard in Resources */,

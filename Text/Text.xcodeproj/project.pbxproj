@@ -16,6 +16,7 @@
 		D78CC6491F724431008FF306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D78CC6481F724431008FF306 /* main.m */; };
 		D78CC6531F724431008FF306 /* TextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D78CC6521F724431008FF306 /* TextTests.m */; };
 		D78CC65E1F724431008FF306 /* TextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D78CC65D1F724431008FF306 /* TextUITests.m */; };
+		D7AA4A911F78A4F400C8D882 /* UMSocialCoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AA4A901F78A4F400C8D882 /* UMSocialCoreManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,9 @@
 		D78CC6591F724431008FF306 /* TextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78CC65D1F724431008FF306 /* TextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUITests.m; sourceTree = "<group>"; };
 		D78CC65F1F724431008FF306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7AA4A8D1F789EDA00C8D882 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D7AA4A8F1F78A4F400C8D882 /* UMSocialCoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMSocialCoreManager.h; sourceTree = "<group>"; };
+		D7AA4A901F78A4F400C8D882 /* UMSocialCoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMSocialCoreManager.m; sourceTree = "<group>"; };
 		FA478B3C164AB1BE25AAA530 /* Pods-Text.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text.release.xcconfig"; path = "Pods/Target Support Files/Pods-Text/Pods-Text.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,11 +133,14 @@
 				D78CC63A1F724431008FF306 /* AppDelegate.m */,
 				D78CC63C1F724431008FF306 /* ViewController.h */,
 				D78CC63D1F724431008FF306 /* ViewController.m */,
+				D7AA4A8F1F78A4F400C8D882 /* UMSocialCoreManager.h */,
+				D7AA4A901F78A4F400C8D882 /* UMSocialCoreManager.m */,
 				D78CC63F1F724431008FF306 /* Main.storyboard */,
 				D78CC6421F724431008FF306 /* Assets.xcassets */,
 				D78CC6441F724431008FF306 /* LaunchScreen.storyboard */,
 				D78CC6471F724431008FF306 /* Info.plist */,
 				D78CC6481F724431008FF306 /* main.m */,
+				D7AA4A8D1F789EDA00C8D882 /* PrefixHeader.pch */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -341,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78CC63E1F724431008FF306 /* ViewController.m in Sources */,
+				D7AA4A911F78A4F400C8D882 /* UMSocialCoreManager.m in Sources */,
 				D78CC6491F724431008FF306 /* main.m in Sources */,
 				D78CC63B1F724431008FF306 /* AppDelegate.m in Sources */,
 			);
@@ -507,6 +515,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44HU6MVQN2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Text/PrefixHeader.pch";
 				INFOPLIST_FILE = Text/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,6 +532,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44HU6MVQN2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Text/PrefixHeader.pch";
 				INFOPLIST_FILE = Text/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

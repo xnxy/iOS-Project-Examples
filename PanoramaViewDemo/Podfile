@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target "PanoramaViewDemo" do
+	platform :ios, '8.0'
+	use_frameworks!
+	inhibit_all_warnings!
+
+	pod 'Masonry', '~> 1.1.0'
+	pod 'pop', '~> 1.0.10'
+	pod 'ReactiveObjC', '~> 3.0.0'
+
+end

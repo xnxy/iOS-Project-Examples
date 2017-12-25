@@ -6,6 +6,10 @@
 //  Copyright © 2017 bestswifter. All rights reserved.
 //
 
+/*
+ 源码出处：https://github.com/bestswifter/BSPanoramaView
+*/
+
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 #import <CoreMotion/CoreMotion.h>

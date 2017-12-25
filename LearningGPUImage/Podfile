@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target "LearningGPUImage" do
+	
+	platform :ios, '8.0'
+	use_frameworks!
+	inhibit_all_warnings!
+
+	pod 'Masonry', '~> 1.1.0'
+	pod 'MBProgressHUD', '~> 1.0.0'
+	pod 'BlocksKit', '~> 2.2.5'
+	pod 'pop', '~> 1.0.10'
+	pod 'ReactiveObjC', '~> 3.0.0'
+	pod 'TZImagePickerController', '~> 1.9.3'
+
+end

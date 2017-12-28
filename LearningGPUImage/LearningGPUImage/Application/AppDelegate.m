@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "APPSetting.h"
+#import "VCStart.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [[APPSetting sharedManager] configureAppearance];  //友盟统计配置  导航条等配置
+    JWNavigationController *nav = [[JWNavigationController alloc] initWithRootViewController:[VCStart new]];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

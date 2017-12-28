@@ -13,4 +13,7 @@ target "LearningGPUImage" do
 	pod 'ReactiveObjC', '~> 3.0.0'
 	pod 'TZImagePickerController', '~> 1.9.3'
 
+	pod 'GPUImage', '~> 0.1.7'
+	pod 'WRNavigationBar', '~> 1.1.0'
+
 end

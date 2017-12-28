@@ -9,7 +9,35 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//block
+#import "BlocksKit/BlocksKit.h"
+#import <BlocksKit/BlocksKit+UIKit.h>
+
+//AutoLayout
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+
+#import <MBProgressHUD/MBProgressHUD.h>//
+
+#import <ReactiveObjC/ReactiveObjC.h>
+
+#import <TZImagePickerController/TZImagePickerController.h>
+
+#import "POP.h"
+
+#import <GPUImage/GPUImage.h>
+//导航条
+#import "WRNavigationBar.h"
+
+//
+#import "AppDelegate.h"
+#import "Utils.h"
+#import "JWCocoa.h"
+#import "MacroDefine.h"
 
 #endif /* PrefixHeader_pch */

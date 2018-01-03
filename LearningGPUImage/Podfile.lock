@@ -1,0 +1,47 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - GPUImage (0.1.7)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - pop (1.0.10)
+  - ReactiveObjC (3.0.0)
+  - TZImagePickerController (1.9.3)
+  - WRNavigationBar (1.1.0)
+
+DEPENDENCIES:
+  - BlocksKit (~> 2.2.5)
+  - GPUImage (~> 0.1.7)
+  - Masonry (~> 1.1.0)
+  - MBProgressHUD (~> 1.0.0)
+  - pop (~> 1.0.10)
+  - ReactiveObjC (~> 3.0.0)
+  - TZImagePickerController (~> 1.9.3)
+  - WRNavigationBar (~> 1.1.0)
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
+  WRNavigationBar: cd80a900b88a260425501ca8247ccd5d1d5931db
+
+PODFILE CHECKSUM: b8f4ece508d0bb977bb197b09196b9223b4b241a
+
+COCOAPODS: 1.4.0.rc.1

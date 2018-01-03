@@ -35,6 +35,4 @@
 #import "ConfigAttributedString.h"
 #import "NSString+RichText.h"
 
-#import "RangeValueView.h"
-
 #endif /* JWCocoa_h */

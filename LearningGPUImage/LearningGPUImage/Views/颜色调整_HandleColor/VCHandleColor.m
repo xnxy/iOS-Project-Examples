@@ -7,18 +7,17 @@
 //
 
 #import "VCHandleColor.h"
+#import "SliderView.h"
+#import "ImageFilter.h"
 
 @interface VCHandleColor ()<TZImagePickerControllerDelegate>
 
 @property (nonatomic, strong)UIImageView *imageView;
 
-@property (nonatomic, strong)RangeValueView *brightnessRangeView;//亮度
-@property (nonatomic, strong)RangeValueView *exposureRangeView;//曝光
-@property (nonatomic, strong)RangeValueView *contrastRangeView; //对比度
-@property (nonatomic, strong)RangeValueView *saturationRangeView; //饱和度
-
 @property (nonatomic, strong) NSMutableArray<UIImage *> *selectedPhothAry; //选中的图片（image）
 @property (nonatomic, strong) NSMutableArray            *selectedAssetAry; //选中的图片(Asset)
+
+@property (nonatomic, assign) BOOL imageChagne;
 
 @end
 
@@ -29,9 +28,19 @@
     self.title = @"颜色调整";
     self.navigationController.fd_fullscreenPopGestureRecognizer.enabled = NO;
     [self setupUI];
+    
 }
 
 - (void)setupUI{
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"保存"
+                                                                                 style:UIBarButtonItemStyleDone
+                                                                               handler:^(id sender)
+    {
+        if (self.imageView.image) {
+//            [TZImagePickerCo];
+        }
+    }];
     
     UIImageView *imageView = [UIImageView new];
     imageView.userInteractionEnabled = YES;
@@ -40,43 +49,39 @@
     UIView *view = [UIView new];
     view.backgroundColor = [UIColor whiteColor];
     
-    RangeValueView *brightnessRangeView = [RangeValueView rangeValueViewWithFrame:CGRectMake(10, kSCREEN_HEIGHT - 100 - 40, kSCREEN_WIDTH - 20, 0)
-                                                                             name:@"亮度 brightness"
-                                                                         minValue:-1.f
-                                                                         maxValue:1.f
-                                                                     defaultValue:0.f];
+    SliderView *brightnessRangeView = [[SliderView alloc] initWithFrame:CGRectZero
+                                                                   name:@"亮度 brightness"
+                                                               minValue:-1.f
+                                                               maxValue:1.f
+                                                           defaultValue:0.f];
     
-    RangeValueView *exposureRangeView = [RangeValueView rangeValueViewWithFrame:CGRectMake(10, kSCREEN_HEIGHT - 100 - 40*2, kSCREEN_WIDTH - 20, 0)
-                                                                             name:@"曝光 exposure"
-                                                                         minValue:-10.f
-                                                                         maxValue:10.f
-                                                                     defaultValue:0.f];
+    SliderView *exposureRangeView = [[SliderView alloc] initWithFrame:CGRectZero
+                                                                 name:@"曝光 exposure"
+                                                             minValue:-10.f
+                                                             maxValue:10.f
+                                                         defaultValue:0.f];
     
-    RangeValueView *contrastRangeView = [RangeValueView rangeValueViewWithFrame:CGRectMake(10, kSCREEN_HEIGHT - 100 - 40*3, kSCREEN_WIDTH - 20, 0)
-                                                                             name:@"对比度 contrast"
-                                                                         minValue:0.f
-                                                                         maxValue:4.f
-                                                                     defaultValue:1.f];
+    SliderView *contrastRangeView = [[SliderView alloc] initWithFrame:CGRectZero
+                                                                 name:@"对比度 contrast"
+                                                             minValue:0.f
+                                                             maxValue:4.f
+                                                         defaultValue:1.f];
     
-    RangeValueView *saturationRangeView = [RangeValueView rangeValueViewWithFrame:CGRectMake(10, kSCREEN_HEIGHT - 100 - 40*4, kSCREEN_WIDTH - 20, 0)
-                                                                             name:@"饱和度 saturation"
-                                                                         minValue:0.f
-                                                                         maxValue:2.f
-                                                                     defaultValue:1.f];
+    SliderView *saturationRangeView = [[SliderView alloc] initWithFrame:CGRectZero
+                                                                   name:@"饱和度 saturation"
+                                                               minValue:0.f
+                                                               maxValue:2.f
+                                                           defaultValue:1.f];
     
     //
     [self.view addSubview:imageView];
     [self.view addSubview:view];
-    [self.view addSubview:brightnessRangeView];
-    [self.view addSubview:exposureRangeView];
-    [self.view addSubview:contrastRangeView];
-    [self.view addSubview:saturationRangeView];
+    [view addSubview:brightnessRangeView];
+    [view addSubview:exposureRangeView];
+    [view addSubview:contrastRangeView];
+    [view addSubview:saturationRangeView];
     
     self.imageView = imageView;
-    self.brightnessRangeView = brightnessRangeView;
-    self.exposureRangeView = exposureRangeView;
-    self.contrastRangeView = contrastRangeView;
-    self.saturationRangeView = saturationRangeView;
     
     //layout
     [view makeConstraints:^(MASConstraintMaker *make) {
@@ -89,6 +94,30 @@
         make.bottom.equalTo(view.top);
     }];
     
+    //亮度
+    [brightnessRangeView makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.equalTo(view).offset(10);
+        make.right.equalTo(view.right).offset(-10);
+    }];
+    
+    //曝光
+    [exposureRangeView makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(brightnessRangeView);
+        make.top.equalTo(brightnessRangeView.bottom).offset(10);
+    }];
+    
+    //对比度
+    [contrastRangeView makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(brightnessRangeView);
+        make.top.equalTo(exposureRangeView.bottom).offset(10);
+    }];
+    
+    //饱和度
+    [saturationRangeView makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(brightnessRangeView);
+        make.top.equalTo(contrastRangeView.bottom).offset(10);
+    }];
+    
     //action
     @weakify(self);
     [imageView bk_whenTapped:^{
@@ -97,114 +126,37 @@
     }];
     
     //亮度
-    [[RACObserve(brightnessRangeView, currentValue) takeUntil:self.rac_willDeallocSignal]
+    [[RACObserve(brightnessRangeView, changeValue) takeUntil:self.rac_willDeallocSignal]
      subscribeNext:^(NSNumber *number) {
          @strongify(self);
-         [self addBrightnessFilterWithBrightness:[number floatValue]];
+         self.imageView.image = [ImageFilter imageBrightnessFilter:[number floatValue] image:self.imageView.image imageChange:self.imageChagne];
+         self.imageChagne = NO;
      }];
     
     //曝光
-    [[RACObserve(exposureRangeView, currentValue) takeUntil:self.rac_willDeallocSignal]
+    [[RACObserve(exposureRangeView, changeValue) takeUntil:self.rac_willDeallocSignal]
      subscribeNext:^(NSNumber *number) {
          @strongify(self);
-         [self addExposureFilterWithExposure:[number floatValue]];
+         self.imageView.image = [ImageFilter imageExposureFilter:[number floatValue] image:self.imageView.image imageChange:self.imageChagne];
+         self.imageChagne = NO;
      }];
     
     //对比度
-    [[RACObserve(contrastRangeView, currentValue) takeUntil:self.rac_willDeallocSignal]
+    [[RACObserve(contrastRangeView, changeValue) takeUntil:self.rac_willDeallocSignal]
      subscribeNext:^(NSNumber *number) {
          @strongify(self);
-         [self addcontrastFilterWithContrast:[number floatValue]];
+         self.imageView.image = [ImageFilter imageContrastFilter:[number floatValue] image:self.imageView.image imageChange:self.imageChagne];
+         self.imageChagne = NO;
      }];
     
     //饱和度
-    [[RACObserve(saturationRangeView, currentValue) takeUntil:self.rac_willDeallocSignal]
+    [[RACObserve(saturationRangeView, changeValue) takeUntil:self.rac_willDeallocSignal]
      subscribeNext:^(NSNumber *number) {
          @strongify(self);
-         [self addSaturationFilterWithSaturation:[number floatValue]];
+         self.imageView.image = [ImageFilter imageSaturationFilter:[number floatValue] image:self.imageView.image imageChange:self.imageChagne];
+         self.imageChagne = NO;
      }];
     
-}
-
-#pragma mark ---
-#pragma mark --- 饱和度 ---
-//Saturation ranges from 0.0 (fully desaturated) to 2.0 (max saturation), with 1.0 as the normal level
-static GPUImageSaturationFilter *saturationFilter = nil;
-- (void)addSaturationFilterWithSaturation:(CGFloat)saturation{
-    if (saturationFilter == nil) {
-        saturationFilter = [[GPUImageSaturationFilter alloc]init];
-    }
-    saturationFilter.saturation = saturation;
-    if (self.imageView.image) {
-        [self changeFilter:saturationFilter image:self.imageView.image];
-    }
-}
-
-#pragma mark ---
-#pragma mark --- 对比度 ---
-//Contrast ranges from 0.0 to 4.0 (max contrast), with 1.0 as the normal level
-static GPUImageContrastFilter *contrastFilter = nil;
-- (void)addcontrastFilterWithContrast:(CGFloat)contrast{
-    if (contrastFilter == nil) {
-        contrastFilter = [[GPUImageContrastFilter alloc] init];
-    }
-    contrastFilter.contrast = contrast;
-    if (self.imageView.image) {
-        [self changeFilter:contrastFilter image:self.imageView.image];
-    }
-    
-}
-
-#pragma mark ---
-#pragma mark --- 曝光 ---
-// Exposure ranges from -10.0 to 10.0, with 0.0 as the normal level
-static GPUImageExposureFilter *exposureFilter = nil;
-- (void)addExposureFilterWithExposure:(CGFloat)exposure{
-    if (exposureFilter == nil) {
-        exposureFilter = [[GPUImageExposureFilter alloc] init];
-    }
-    exposureFilter.exposure = exposure;
-    if (self.imageView.image) {
-        [self changeFilter:exposureFilter image:self.imageView.image];
-    }
-}
-
-#pragma mark ---
-#pragma mark --- 亮度滤镜 ---
-//Brightness ranges from -1.0 to 1.0
-static GPUImageBrightnessFilter *brightnessFilter = nil;
-- (void)addBrightnessFilterWithBrightness:(CGFloat)brightness{
-    if (brightnessFilter == nil) {
-        brightnessFilter = [[GPUImageBrightnessFilter alloc]init];
-    }
-    brightnessFilter.brightness = brightness;
-    if (self.imageView.image) {
-        [self changeFilter:brightnessFilter image:self.imageView.image];
-    }
-}
-
-#pragma mark ---
-#pragma mark --- 添加滤镜 ---
-static GPUImagePicture *imagePicture = nil;
-- (void)changeFilter:(GPUImageOutput<GPUImageInput>*)filter image:(UIImage *)img{
-    //设置图片渲染区域
-    if (filter == nil) {
-        [imagePicture removeAllTargets];
-        return;
-    }
-    [filter forceProcessingAtSize:img.size];
-    [filter useNextFrameForImageCapture];
-    //获取数据源
-    if (imagePicture == nil) {
-        imagePicture = [[GPUImagePicture alloc] initWithImage:img];
-    }
-    //添加上滤镜
-    [imagePicture addTarget:filter];
-    //开始渲染
-    [imagePicture processImage];
-    //获取渲染后的图片
-    UIImage *newImage = [filter imageFromCurrentFramebuffer];
-    self.imageView.image = newImage;
 }
 
 #pragma mark ---
@@ -220,6 +172,7 @@ static GPUImagePicture *imagePicture = nil;
          self.selectedAssetAry = [NSMutableArray arrayWithArray:assets];
          if (photos.count > 0) {
              self.imageView.image = [photos objectAtIndexSafe:0];
+             self.imageChagne = YES;
          }
      }];
 }
@@ -256,9 +209,7 @@ static GPUImagePicture *imagePicture = nil;
     }];
     
     [self presentViewController:imagePickerVc animated:YES completion:nil];
-    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

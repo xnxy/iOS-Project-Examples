@@ -77,9 +77,9 @@ static NSString* TableViewCellIdentifier0 = @"TableViewCellIdentifier0";
 - (NSMutableArray *)dataAry{
     if (!_dataAry) {
         _dataAry = [NSMutableArray arrayWithObjects:@{VCName:@"VCHandleColor",
-                                                      VCDetail: @"颜色调整"
-                                                      }, nil
-                    ];
+                                                      VCDetail: @"图片颜色调整"},
+                                                    @{VCName:@"VideoHandleColor",
+                                                      VCDetail: @"视频颜色调整"},nil];
     }
     return _dataAry;
 }

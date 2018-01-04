@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5CEAECFBC16EE979F3287ECE /* Pods_LearningGPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE915FA73FC7A00800BFBB4E /* Pods_LearningGPUImage.framework */; };
+		D7193BB11FFCDFCF003AD54B /* SavePhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = D7193BB01FFCDFCF003AD54B /* SavePhotoAlbum.m */; };
 		D74147AF1FF6316A0089D275 /* VideoHandleColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D74147AE1FF6316A0089D275 /* VideoHandleColor.m */; };
 		D74147B91FF634860089D275 /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D74147B81FF634860089D275 /* ImageFilter.m */; };
 		D79AADA91FF4E1A2000FDF9D /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79AADA81FF4E1A2000FDF9D /* SliderView.m */; };
@@ -45,6 +46,8 @@
 		D7ADBAB41FF0D87700FE9516 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADBAB31FF0D87700FE9516 /* main.m */; };
 		D7ADBABE1FF0D87700FE9516 /* LearningGPUImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADBABD1FF0D87700FE9516 /* LearningGPUImageTests.m */; };
 		D7ADBAC91FF0D87700FE9516 /* LearningGPUImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADBAC81FF0D87700FE9516 /* LearningGPUImageUITests.m */; };
+		D7B2ABBF1FFE29E10091B6BE /* RecordEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B2ABBE1FFE29E10091B6BE /* RecordEncoder.m */; };
+		D7B2ABC21FFE29FB0091B6BE /* RecordTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B2ABC11FFE29FB0091B6BE /* RecordTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7193BAF1FFCDFCF003AD54B /* SavePhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavePhotoAlbum.h; sourceTree = "<group>"; };
+		D7193BB01FFCDFCF003AD54B /* SavePhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavePhotoAlbum.m; sourceTree = "<group>"; };
 		D74147AD1FF6316A0089D275 /* VideoHandleColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoHandleColor.h; sourceTree = "<group>"; };
 		D74147AE1FF6316A0089D275 /* VideoHandleColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoHandleColor.m; sourceTree = "<group>"; };
 		D74147B71FF634860089D275 /* ImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilter.h; sourceTree = "<group>"; };
@@ -144,6 +149,10 @@
 		D7ADBAC81FF0D87700FE9516 /* LearningGPUImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearningGPUImageUITests.m; sourceTree = "<group>"; };
 		D7ADBACA1FF0D87700FE9516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7ADBAD61FF0DB3F00FE9516 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D7B2ABBD1FFE29E10091B6BE /* RecordEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordEncoder.h; sourceTree = "<group>"; };
+		D7B2ABBE1FFE29E10091B6BE /* RecordEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordEncoder.m; sourceTree = "<group>"; };
+		D7B2ABC01FFE29FB0091B6BE /* RecordTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordTools.h; sourceTree = "<group>"; };
+		D7B2ABC11FFE29FB0091B6BE /* RecordTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordTools.m; sourceTree = "<group>"; };
 		E2823C6E44DBACE45C3BAEB7 /* Pods-LearningGPUImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningGPUImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearningGPUImage/Pods-LearningGPUImage.debug.xcconfig"; sourceTree = "<group>"; };
 		F72454C567CA877DB5D298E3 /* Pods-LearningGPUImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningGPUImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearningGPUImage/Pods-LearningGPUImage.release.xcconfig"; sourceTree = "<group>"; };
 		FE915FA73FC7A00800BFBB4E /* Pods_LearningGPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningGPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +198,7 @@
 			children = (
 				D74147AD1FF6316A0089D275 /* VideoHandleColor.h */,
 				D74147AE1FF6316A0089D275 /* VideoHandleColor.m */,
+				D7B2ABBC1FFE29360091B6BE /* 视频录制 */,
 			);
 			path = "视频颜色调整";
 			sourceTree = "<group>";
@@ -250,6 +260,8 @@
 			children = (
 				D79EA2101FF226060055A31D /* Utils.h */,
 				D79EA2111FF226060055A31D /* Utils.m */,
+				D7193BAF1FFCDFCF003AD54B /* SavePhotoAlbum.h */,
+				D7193BB01FFCDFCF003AD54B /* SavePhotoAlbum.m */,
 				D74147B01FF633900089D275 /* 图片滤镜 */,
 			);
 			path = Utils;
@@ -503,6 +515,17 @@
 			path = LearningGPUImageUITests;
 			sourceTree = "<group>";
 		};
+		D7B2ABBC1FFE29360091B6BE /* 视频录制 */ = {
+			isa = PBXGroup;
+			children = (
+				D7B2ABBD1FFE29E10091B6BE /* RecordEncoder.h */,
+				D7B2ABBE1FFE29E10091B6BE /* RecordEncoder.m */,
+				D7B2ABC01FFE29FB0091B6BE /* RecordTools.h */,
+				D7B2ABC11FFE29FB0091B6BE /* RecordTools.m */,
+			);
+			path = "视频录制";
+			sourceTree = "<group>";
+		};
 		F0006013A5679919C40BC170 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,8 +746,11 @@
 				D79EA2121FF226060055A31D /* Utils.m in Sources */,
 				D79EA20B1FF225900055A31D /* VCStart.m in Sources */,
 				D79EA2471FF226350055A31D /* UILabel+Util.m in Sources */,
+				D7193BB11FFCDFCF003AD54B /* SavePhotoAlbum.m in Sources */,
 				D79EA20F1FF225D10055A31D /* Model.m in Sources */,
 				D79EA2461FF226350055A31D /* UIWindow+PazLabs.m in Sources */,
+				D7B2ABC21FFE29FB0091B6BE /* RecordTools.m in Sources */,
+				D7B2ABBF1FFE29E10091B6BE /* RecordEncoder.m in Sources */,
 				D7A35D7C1FF350AD00E708F0 /* VCHandleColor.m in Sources */,
 				D79EA23E1FF226350055A31D /* UIImage+ImageRoundedCorner.m in Sources */,
 				D74147B91FF634860089D275 /* ImageFilter.m in Sources */,

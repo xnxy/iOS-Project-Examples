@@ -32,13 +32,18 @@
 }
 
 - (void)setupUI{
-    
+     @weakify(self);
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"保存"
                                                                                  style:UIBarButtonItemStyleDone
                                                                                handler:^(id sender)
     {
+        @strongify(self);
         if (self.imageView.image) {
-//            [TZImagePickerCo];
+            
+            [SavePhotoAlbum savePhotoWithImage:self.imageView.image albumName:@"LearningGPUImage" completion:^(NSError *error) {
+                
+            }];
+            
         }
     }];
     
@@ -119,7 +124,7 @@
     }];
     
     //action
-    @weakify(self);
+   
     [imageView bk_whenTapped:^{
         @strongify(self);
         [self selectImage];

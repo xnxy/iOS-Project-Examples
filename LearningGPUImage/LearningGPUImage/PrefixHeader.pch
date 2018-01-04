@@ -39,5 +39,6 @@
 #import "Utils.h"
 #import "JWCocoa.h"
 #import "MacroDefine.h"
+#import "SavePhotoAlbum.h"
 
 #endif /* PrefixHeader_pch */

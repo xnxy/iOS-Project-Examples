@@ -38,6 +38,7 @@
 		D79EA2641FF226480055A31D /* NSString+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EA2611FF226480055A31D /* NSString+RichText.m */; };
 		D79EA2691FF2281E0055A31D /* VCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EA2681FF2281E0055A31D /* VCViewModel.m */; };
 		D79EA26C1FF24CA20055A31D /* APPSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EA26B1FF24CA20055A31D /* APPSetting.m */; };
+		D79FF2282004B51200A1A59D /* VCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D79FF2272004B51200A1A59D /* VCPlayer.m */; };
 		D7A35D781FF34D8800E708F0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A35D771FF34D8800E708F0 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		D7A35D7C1FF350AD00E708F0 /* VCHandleColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A35D7B1FF350AD00E708F0 /* VCHandleColor.m */; };
 		D7ADBAA61FF0D87700FE9516 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADBAA51FF0D87700FE9516 /* AppDelegate.m */; };
@@ -131,6 +132,8 @@
 		D79EA2681FF2281E0055A31D /* VCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCViewModel.m; sourceTree = "<group>"; };
 		D79EA26A1FF24CA20055A31D /* APPSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPSetting.h; sourceTree = "<group>"; };
 		D79EA26B1FF24CA20055A31D /* APPSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPSetting.m; sourceTree = "<group>"; };
+		D79FF2262004B51200A1A59D /* VCPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCPlayer.h; sourceTree = "<group>"; };
+		D79FF2272004B51200A1A59D /* VCPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCPlayer.m; sourceTree = "<group>"; };
 		D7A35D761FF34D8800E708F0 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		D7A35D771FF34D8800E708F0 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		D7A35D7A1FF350AD00E708F0 /* VCHandleColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCHandleColor.h; sourceTree = "<group>"; };
@@ -198,6 +201,7 @@
 			children = (
 				D74147AD1FF6316A0089D275 /* VideoHandleColor.h */,
 				D74147AE1FF6316A0089D275 /* VideoHandleColor.m */,
+				D79FF2252004B4E900A1A59D /* 视频播放 */,
 				D7B2ABBC1FFE29360091B6BE /* 视频录制 */,
 			);
 			path = "视频颜色调整";
@@ -427,6 +431,15 @@
 				D79EA2621FF226480055A31D /* ConfigAttributedString.h */,
 			);
 			path = RichText;
+			sourceTree = "<group>";
+		};
+		D79FF2252004B4E900A1A59D /* 视频播放 */ = {
+			isa = PBXGroup;
+			children = (
+				D79FF2262004B51200A1A59D /* VCPlayer.h */,
+				D79FF2272004B51200A1A59D /* VCPlayer.m */,
+			);
+			path = "视频播放";
 			sourceTree = "<group>";
 		};
 		D7A35D711FF34B5C00E708F0 /* BaseView */ = {
@@ -712,6 +725,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/WRNavigationBar/WRNavigationBar.framework",
+				"${BUILT_PRODUCTS_DIR}/ZFPlayer/ZFPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -723,6 +737,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRNavigationBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,6 +761,7 @@
 				D79EA2121FF226060055A31D /* Utils.m in Sources */,
 				D79EA20B1FF225900055A31D /* VCStart.m in Sources */,
 				D79EA2471FF226350055A31D /* UILabel+Util.m in Sources */,
+				D79FF2282004B51200A1A59D /* VCPlayer.m in Sources */,
 				D7193BB11FFCDFCF003AD54B /* SavePhotoAlbum.m in Sources */,
 				D79EA20F1FF225D10055A31D /* Model.m in Sources */,
 				D79EA2461FF226350055A31D /* UIWindow+PazLabs.m in Sources */,

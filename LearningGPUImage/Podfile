@@ -15,5 +15,6 @@ target "LearningGPUImage" do
 
 	pod 'GPUImage', '~> 0.1.7'
 	pod 'WRNavigationBar', '~> 1.1.0'
+	pod 'ZFPlayer', '~> 2.1.5'
 
 end

@@ -21,6 +21,8 @@ PODS:
   - ReactiveObjC (3.0.0)
   - TZImagePickerController (1.9.3)
   - WRNavigationBar (1.1.0)
+  - ZFPlayer (2.1.5):
+    - Masonry
 
 DEPENDENCIES:
   - BlocksKit (~> 2.2.5)
@@ -31,6 +33,7 @@ DEPENDENCIES:
   - ReactiveObjC (~> 3.0.0)
   - TZImagePickerController (~> 1.9.3)
   - WRNavigationBar (~> 1.1.0)
+  - ZFPlayer (~> 2.1.5)
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
@@ -41,7 +44,8 @@ SPEC CHECKSUMS:
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
   WRNavigationBar: cd80a900b88a260425501ca8247ccd5d1d5931db
+  ZFPlayer: 8a80bf8eb4638b97fbceaefcd3ca9978e9f17c9d
 
-PODFILE CHECKSUM: b8f4ece508d0bb977bb197b09196b9223b4b241a
+PODFILE CHECKSUM: c51f36948737c1f7e97e15b29c74630a227b1a53
 
 COCOAPODS: 1.4.0.rc.1

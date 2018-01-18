@@ -26,9 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self initCamera]; //设置相机
     [self setupUI];
-    
 }
 
 - (void)setupUI{
@@ -46,7 +46,6 @@
         [self.navigationController pushViewController:vc animated:YES];
         
     }];
-    
     
     UIButton  *recordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     recordBtn.backgroundColor = [UIColor blueColor];
@@ -66,7 +65,6 @@
     }];
     
     //action
-    
     [[recordBtn rac_signalForControlEvents:UIControlEventTouchUpInside]
      subscribeNext:^(__kindof UIControl * _Nullable x) {
          @strongify(self);
@@ -203,6 +201,7 @@
         //饱和度 0.0 ~ 2.0
         GPUImageSaturationFilter *saturationFilter = [[GPUImageSaturationFilter alloc] init];
         saturationFilter.saturation = 1.0f;
+        
         /**
          原理：
          1. filterGroup(addFilter) 滤镜组添加每个滤镜

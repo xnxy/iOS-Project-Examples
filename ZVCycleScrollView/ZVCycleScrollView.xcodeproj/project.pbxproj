@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D78710FB20085ABB00DDEAEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D78710FA20085ABB00DDEAEC /* AppDelegate.m */; };
+		D78710FE20085ABB00DDEAEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D78710FD20085ABB00DDEAEC /* ViewController.m */; };
+		D787110120085ABB00DDEAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78710FF20085ABB00DDEAEC /* Main.storyboard */; };
+		D787110320085ABB00DDEAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D787110220085ABB00DDEAEC /* Assets.xcassets */; };
+		D787110620085ABB00DDEAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D787110420085ABB00DDEAEC /* LaunchScreen.storyboard */; };
+		D787110920085ABB00DDEAEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D787110820085ABB00DDEAEC /* main.m */; };
+		D787111320085ABB00DDEAEC /* ZVCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D787111220085ABB00DDEAEC /* ZVCycleScrollViewTests.m */; };
+		D787111E20085ABB00DDEAEC /* ZVCycleScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D787111D20085ABB00DDEAEC /* ZVCycleScrollViewUITests.m */; };
+		D787112E20085E1800DDEAEC /* ZVCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D787112D20085E1800DDEAEC /* ZVCycleScrollView.m */; };
+		D787113120085E4600DDEAEC /* ZVCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D787113020085E4600DDEAEC /* ZVCollectionViewCell.m */; };
+		D787113520085F5B00DDEAEC /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = D787113420085F5B00DDEAEC /* UIView+SetRect.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D787110F20085ABB00DDEAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78710EE20085ABB00DDEAEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78710F520085ABB00DDEAEC;
+			remoteInfo = ZVCycleScrollView;
+		};
+		D787111A20085ABB00DDEAEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78710EE20085ABB00DDEAEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78710F520085ABB00DDEAEC;
+			remoteInfo = ZVCycleScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D78710F620085ABB00DDEAEC /* ZVCycleScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZVCycleScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78710F920085ABB00DDEAEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D78710FA20085ABB00DDEAEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D78710FC20085ABB00DDEAEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D78710FD20085ABB00DDEAEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D787110020085ABB00DDEAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D787110220085ABB00DDEAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D787110520085ABB00DDEAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D787110720085ABB00DDEAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D787110820085ABB00DDEAEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D787110E20085ABB00DDEAEC /* ZVCycleScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZVCycleScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D787111220085ABB00DDEAEC /* ZVCycleScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZVCycleScrollViewTests.m; sourceTree = "<group>"; };
+		D787111420085ABB00DDEAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D787111920085ABB00DDEAEC /* ZVCycleScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZVCycleScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D787111D20085ABB00DDEAEC /* ZVCycleScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZVCycleScrollViewUITests.m; sourceTree = "<group>"; };
+		D787111F20085ABB00DDEAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D787112C20085E1800DDEAEC /* ZVCycleScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZVCycleScrollView.h; sourceTree = "<group>"; };
+		D787112D20085E1800DDEAEC /* ZVCycleScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZVCycleScrollView.m; sourceTree = "<group>"; };
+		D787112F20085E4600DDEAEC /* ZVCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZVCollectionViewCell.h; sourceTree = "<group>"; };
+		D787113020085E4600DDEAEC /* ZVCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZVCollectionViewCell.m; sourceTree = "<group>"; };
+		D787113320085F5B00DDEAEC /* UIView+SetRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		D787113420085F5B00DDEAEC /* UIView+SetRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D78710F320085ABB00DDEAEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D787110B20085ABB00DDEAEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D787111620085ABB00DDEAEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D78710ED20085ABB00DDEAEC = {
+			isa = PBXGroup;
+			children = (
+				D78710F820085ABB00DDEAEC /* ZVCycleScrollView */,
+				D787111120085ABB00DDEAEC /* ZVCycleScrollViewTests */,
+				D787111C20085ABB00DDEAEC /* ZVCycleScrollViewUITests */,
+				D78710F720085ABB00DDEAEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D78710F720085ABB00DDEAEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D78710F620085ABB00DDEAEC /* ZVCycleScrollView.app */,
+				D787110E20085ABB00DDEAEC /* ZVCycleScrollViewTests.xctest */,
+				D787111920085ABB00DDEAEC /* ZVCycleScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D78710F820085ABB00DDEAEC /* ZVCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D78710F920085ABB00DDEAEC /* AppDelegate.h */,
+				D78710FA20085ABB00DDEAEC /* AppDelegate.m */,
+				D78710FC20085ABB00DDEAEC /* ViewController.h */,
+				D78710FD20085ABB00DDEAEC /* ViewController.m */,
+				D787112B20085AF200DDEAEC /* ZVCycleScrollView */,
+				D78710FF20085ABB00DDEAEC /* Main.storyboard */,
+				D787110220085ABB00DDEAEC /* Assets.xcassets */,
+				D787110420085ABB00DDEAEC /* LaunchScreen.storyboard */,
+				D787110720085ABB00DDEAEC /* Info.plist */,
+				D787110820085ABB00DDEAEC /* main.m */,
+			);
+			path = ZVCycleScrollView;
+			sourceTree = "<group>";
+		};
+		D787111120085ABB00DDEAEC /* ZVCycleScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D787111220085ABB00DDEAEC /* ZVCycleScrollViewTests.m */,
+				D787111420085ABB00DDEAEC /* Info.plist */,
+			);
+			path = ZVCycleScrollViewTests;
+			sourceTree = "<group>";
+		};
+		D787111C20085ABB00DDEAEC /* ZVCycleScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D787111D20085ABB00DDEAEC /* ZVCycleScrollViewUITests.m */,
+				D787111F20085ABB00DDEAEC /* Info.plist */,
+			);
+			path = ZVCycleScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		D787112B20085AF200DDEAEC /* ZVCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D787112C20085E1800DDEAEC /* ZVCycleScrollView.h */,
+				D787112D20085E1800DDEAEC /* ZVCycleScrollView.m */,
+				D787112F20085E4600DDEAEC /* ZVCollectionViewCell.h */,
+				D787113020085E4600DDEAEC /* ZVCollectionViewCell.m */,
+				D787113320085F5B00DDEAEC /* UIView+SetRect.h */,
+				D787113420085F5B00DDEAEC /* UIView+SetRect.m */,
+			);
+			path = ZVCycleScrollView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D78710F520085ABB00DDEAEC /* ZVCycleScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D787112220085ABB00DDEAEC /* Build configuration list for PBXNativeTarget "ZVCycleScrollView" */;
+			buildPhases = (
+				D78710F220085ABB00DDEAEC /* Sources */,
+				D78710F320085ABB00DDEAEC /* Frameworks */,
+				D78710F420085ABB00DDEAEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZVCycleScrollView;
+			productName = ZVCycleScrollView;
+			productReference = D78710F620085ABB00DDEAEC /* ZVCycleScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D787110D20085ABB00DDEAEC /* ZVCycleScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D787112520085ABB00DDEAEC /* Build configuration list for PBXNativeTarget "ZVCycleScrollViewTests" */;
+			buildPhases = (
+				D787110A20085ABB00DDEAEC /* Sources */,
+				D787110B20085ABB00DDEAEC /* Frameworks */,
+				D787110C20085ABB00DDEAEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D787111020085ABB00DDEAEC /* PBXTargetDependency */,
+			);
+			name = ZVCycleScrollViewTests;
+			productName = ZVCycleScrollViewTests;
+			productReference = D787110E20085ABB00DDEAEC /* ZVCycleScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D787111820085ABB00DDEAEC /* ZVCycleScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D787112820085ABB00DDEAEC /* Build configuration list for PBXNativeTarget "ZVCycleScrollViewUITests" */;
+			buildPhases = (
+				D787111520085ABB00DDEAEC /* Sources */,
+				D787111620085ABB00DDEAEC /* Frameworks */,
+				D787111720085ABB00DDEAEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D787111B20085ABB00DDEAEC /* PBXTargetDependency */,
+			);
+			name = ZVCycleScrollViewUITests;
+			productName = ZVCycleScrollViewUITests;
+			productReference = D787111920085ABB00DDEAEC /* ZVCycleScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D78710EE20085ABB00DDEAEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = dev;
+				TargetAttributes = {
+					D78710F520085ABB00DDEAEC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D787110D20085ABB00DDEAEC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D78710F520085ABB00DDEAEC;
+					};
+					D787111820085ABB00DDEAEC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D78710F520085ABB00DDEAEC;
+					};
+				};
+			};
+			buildConfigurationList = D78710F120085ABB00DDEAEC /* Build configuration list for PBXProject "ZVCycleScrollView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D78710ED20085ABB00DDEAEC;
+			productRefGroup = D78710F720085ABB00DDEAEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D78710F520085ABB00DDEAEC /* ZVCycleScrollView */,
+				D787110D20085ABB00DDEAEC /* ZVCycleScrollViewTests */,
+				D787111820085ABB00DDEAEC /* ZVCycleScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D78710F420085ABB00DDEAEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D787110620085ABB00DDEAEC /* LaunchScreen.storyboard in Resources */,
+				D787110320085ABB00DDEAEC /* Assets.xcassets in Resources */,
+				D787110120085ABB00DDEAEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D787110C20085ABB00DDEAEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D787111720085ABB00DDEAEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D78710F220085ABB00DDEAEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D787112E20085E1800DDEAEC /* ZVCycleScrollView.m in Sources */,
+				D787113520085F5B00DDEAEC /* UIView+SetRect.m in Sources */,
+				D787113120085E4600DDEAEC /* ZVCollectionViewCell.m in Sources */,
+				D78710FE20085ABB00DDEAEC /* ViewController.m in Sources */,
+				D787110920085ABB00DDEAEC /* main.m in Sources */,
+				D78710FB20085ABB00DDEAEC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D787110A20085ABB00DDEAEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D787111320085ABB00DDEAEC /* ZVCycleScrollViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D787111520085ABB00DDEAEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D787111E20085ABB00DDEAEC /* ZVCycleScrollViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D787111020085ABB00DDEAEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78710F520085ABB00DDEAEC /* ZVCycleScrollView */;
+			targetProxy = D787110F20085ABB00DDEAEC /* PBXContainerItemProxy */;
+		};
+		D787111B20085ABB00DDEAEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78710F520085ABB00DDEAEC /* ZVCycleScrollView */;
+			targetProxy = D787111A20085ABB00DDEAEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D78710FF20085ABB00DDEAEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D787110020085ABB00DDEAEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D787110420085ABB00DDEAEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D787110520085ABB00DDEAEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D787112020085ABB00DDEAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D787112120085ABB00DDEAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D787112320085ABB00DDEAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44HU6MVQN2;
+				INFOPLIST_FILE = ZVCycleScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WestCoast.ZVCycleScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D787112420085ABB00DDEAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44HU6MVQN2;
+				INFOPLIST_FILE = ZVCycleScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WestCoast.ZVCycleScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D787112620085ABB00DDEAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44HU6MVQN2;
+				INFOPLIST_FILE = ZVCycleScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WestCoast.ZVCycleScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZVCycleScrollView.app/ZVCycleScrollView";
+			};
+			name = Debug;
+		};
+		D787112720085ABB00DDEAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44HU6MVQN2;
+				INFOPLIST_FILE = ZVCycleScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WestCoast.ZVCycleScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZVCycleScrollView.app/ZVCycleScrollView";
+			};
+			name = Release;
+		};
+		D787112920085ABB00DDEAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44HU6MVQN2;
+				INFOPLIST_FILE = ZVCycleScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WestCoast.ZVCycleScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZVCycleScrollView;
+			};
+			name = Debug;
+		};
+		D787112A20085ABB00DDEAEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44HU6MVQN2;
+				INFOPLIST_FILE = ZVCycleScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WestCoast.ZVCycleScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZVCycleScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D78710F120085ABB00DDEAEC /* Build configuration list for PBXProject "ZVCycleScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D787112020085ABB00DDEAEC /* Debug */,
+				D787112120085ABB00DDEAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D787112220085ABB00DDEAEC /* Build configuration list for PBXNativeTarget "ZVCycleScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D787112320085ABB00DDEAEC /* Debug */,
+				D787112420085ABB00DDEAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D787112520085ABB00DDEAEC /* Build configuration list for PBXNativeTarget "ZVCycleScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D787112620085ABB00DDEAEC /* Debug */,
+				D787112720085ABB00DDEAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D787112820085ABB00DDEAEC /* Build configuration list for PBXNativeTarget "ZVCycleScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D787112920085ABB00DDEAEC /* Debug */,
+				D787112A20085ABB00DDEAEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D78710EE20085ABB00DDEAEC /* Project object */;
+}

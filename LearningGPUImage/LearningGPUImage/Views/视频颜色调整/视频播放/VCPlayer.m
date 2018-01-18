@@ -7,6 +7,7 @@
 //
 
 #import "VCPlayer.h"
+#import "ZFPlayer.h"
 
 @interface VCPlayer ()<ZFPlayerDelegate>
 
@@ -40,6 +41,12 @@
     self.playerView.delegate = self;
     //自动播放
     [self.playerView autoPlayTheVideo];
+    
+    //layout
+    [self.playerView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.equalTo(self.view);
+        make.height.equalTo(100);
+    }];
     
 }
 

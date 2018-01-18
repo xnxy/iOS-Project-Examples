@@ -34,8 +34,6 @@
 //导航条
 #import "WRNavigationBar.h"
 
-#import "ZFPlayer.h"
-
 //
 #import "AppDelegate.h"
 #import "Utils.h"

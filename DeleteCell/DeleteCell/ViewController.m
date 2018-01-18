@@ -58,11 +58,6 @@ static NSString *cellID = @"cellID";
 
 #pragma mark ---
 #pragma mark --- 删除 ---
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return UITableViewCellEditingStyleDelete;
-}
-
-
 - (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED{
     
     __weak typeof(self) weakSelf = self;
@@ -75,12 +70,6 @@ static NSString *cellID = @"cellID";
     return @[deleteAction];
 }
 
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        [self deleteCellWithIndexPath:indexPath];
-//    }
-//}
-
 - (void)deleteCellWithIndexPath:(NSIndexPath *)indexPath{
     
     //删除数据源
@@ -91,7 +80,6 @@ static NSString *cellID = @"cellID";
     [self.tableView endUpdates];
     
 }
-
 
 - (NSMutableArray *)dataSoureAry{
     if (!_dataSoureAry) {

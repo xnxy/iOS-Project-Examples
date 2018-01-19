@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target "SegmentView" do
+	
+	platform :ios, '8.0'
+	use_frameworks!
+	inhibit_all_warnings!
+
+	pod 'Masonry', '~> 1.1.0'
+	pod 'BlocksKit', '~> 2.2.5'
+	pod 'MJRefresh', '~> 3.1.15.1'
+	pod 'ReactiveObjC', '~> 3.0.0'
+
+end

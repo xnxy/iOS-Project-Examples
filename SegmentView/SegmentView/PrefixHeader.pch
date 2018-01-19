@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  SegmentView
+//
+//  Created by dev on 2018/1/19.
+//  Copyright © 2018年 dev. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//block
+#import "BlocksKit/BlocksKit.h"
+#import <BlocksKit/BlocksKit+UIKit.h>
+//AutoLayout
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+#import <ReactiveObjC/ReactiveObjC.h>
+
+#import <MJRefresh/MJRefresh.h>
+
+#define kSCREEN_WIDTH          ([UIScreen mainScreen].bounds.size.width)
+#define kSCREEN_HEIGHT         ([UIScreen mainScreen].bounds.size.height)
+
+#define KISIphoneX (CGSizeEqualToSize(CGSizeMake(375.f, 812.f), [UIScreen mainScreen].bounds.size))
+#define kStatusBarHeight (KISIphoneX?(44.f):(20.f))
+#define kNavigationBarHeight 44.f
+#define kTabBarHeight (kStatusBarHeight == 20.f?(49.f):(34.f + 49.f))
+#define KHomeIndicatorHeight (KISIphoneX?(34.f):(0.f))
+#define kNavigationAndStatusBarHeight (kStatusBarHeight + 44.f)
+
+#endif /* PrefixHeader_pch */

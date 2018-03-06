@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     [self setupUI];
 }
 
@@ -47,7 +48,7 @@
     //layout
     [segmentView makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.equalTo(self.view);
-        make.height.equalTo(100);
+        make.height.equalTo(50);
     }];
     
     [self.scrollView makeConstraints:^(MASConstraintMaker *make) {

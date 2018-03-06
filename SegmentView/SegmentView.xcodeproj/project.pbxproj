@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		433F82A01CC1E6DFD5493287 /* Pods_SegmentView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708F2A9084A5EC8E445CBC0A /* Pods_SegmentView.framework */; };
+		D78EC6BE2017079B003E7E0E /* PushView.m in Sources */ = {isa = PBXBuildFile; fileRef = D78EC6BD2017079B003E7E0E /* PushView.m */; };
 		D79D219520118B0200AB154C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D79D219420118B0200AB154C /* AppDelegate.m */; };
 		D79D219820118B0200AB154C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79D219720118B0200AB154C /* ViewController.m */; };
 		D79D219B20118B0200AB154C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79D219920118B0200AB154C /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 		6FF2A0AD064BA585C6C86BF0 /* Pods-SegmentView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentView/Pods-SegmentView.debug.xcconfig"; sourceTree = "<group>"; };
 		708F2A9084A5EC8E445CBC0A /* Pods_SegmentView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegmentView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84B93F6D8A32688A31BF2D7 /* Pods-SegmentView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentView/Pods-SegmentView.release.xcconfig"; sourceTree = "<group>"; };
+		D78EC6BC2017079B003E7E0E /* PushView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushView.h; sourceTree = "<group>"; };
+		D78EC6BD2017079B003E7E0E /* PushView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushView.m; sourceTree = "<group>"; };
 		D79D219020118B0200AB154C /* SegmentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79D219320118B0200AB154C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D79D219420118B0200AB154C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D78EC6BB2017077C003E7E0E /* 自定义View */ = {
+			isa = PBXGroup;
+			children = (
+				D78EC6BC2017079B003E7E0E /* PushView.h */,
+				D78EC6BD2017079B003E7E0E /* PushView.m */,
+			);
+			path = "自定义View";
+			sourceTree = "<group>";
+		};
 		D79D218720118B0200AB154C = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +142,7 @@
 				D79D219420118B0200AB154C /* AppDelegate.m */,
 				D79D219620118B0200AB154C /* ViewController.h */,
 				D79D219720118B0200AB154C /* ViewController.m */,
+				D78EC6BB2017077C003E7E0E /* 自定义View */,
 				D79D219920118B0200AB154C /* Main.storyboard */,
 				D79D219C20118B0200AB154C /* Assets.xcassets */,
 				D79D219E20118B0200AB154C /* LaunchScreen.storyboard */,
@@ -378,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79D219820118B0200AB154C /* ViewController.m in Sources */,
+				D78EC6BE2017079B003E7E0E /* PushView.m in Sources */,
 				D79D21A320118B0200AB154C /* main.m in Sources */,
 				D79D21CF2011A98F00AB154C /* VCSecond.m in Sources */,
 				D79D21C8201191E200AB154C /* SegmentView.m in Sources */,

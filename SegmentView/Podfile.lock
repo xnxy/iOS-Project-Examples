@@ -1,0 +1,35 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.15.1)
+  - ReactiveObjC (3.0.0)
+
+DEPENDENCIES:
+  - BlocksKit (~> 2.2.5)
+  - Masonry (~> 1.1.0)
+  - MJRefresh (~> 3.1.15.1)
+  - ReactiveObjC (~> 3.0.0)
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+
+PODFILE CHECKSUM: da9490f837739ef51ac7b35a9066ba5f9aa6c826
+
+COCOAPODS: 1.4.0.rc.1

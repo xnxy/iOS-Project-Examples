@@ -58,7 +58,7 @@
 }
 
 - (void)timerRunEvent{
-    self.startInteger += 1;
+    self.startInteger ++;
     NSLog(@"---- %lu ---- ",self.startInteger);
     if (self.timerBlock) {
         self.timerBlock(self.startInteger);

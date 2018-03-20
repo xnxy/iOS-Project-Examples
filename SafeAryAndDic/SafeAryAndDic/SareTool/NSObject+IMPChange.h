@@ -20,4 +20,6 @@
  */
 + (void)SwizzlingMethod:(NSString *)systemMethodString systemClassString:(NSString *)systemClassString toSafeMethodString:(NSString *)safeMethodString targetClassString:(NSString *)targetClassString;
 
+//+ (Class)createClass:(const char *)className inheritingFromClass:(Class)superclass;
+
 @end

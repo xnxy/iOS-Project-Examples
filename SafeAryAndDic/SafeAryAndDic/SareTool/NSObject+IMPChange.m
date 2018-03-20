@@ -20,4 +20,8 @@
     method_exchangeImplementations(safeMethod,sysMethod);
 }
 
+//+ (Class)createClass:(const char *)className inheritingFromClass:(Class)superclass {
+//    return objc_allocateClassPair(superclass, className, 0);
+//}
+
 @end

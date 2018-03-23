@@ -8,7 +8,7 @@
 
 #import "NSArray+SafeWrapper.h"
 #import "NSObject+IMPChange.h"
-#import <objc/runtime.h>
+//#import <objc/runtime.h>
 
 @implementation NSArray (SafeWrapper)
 

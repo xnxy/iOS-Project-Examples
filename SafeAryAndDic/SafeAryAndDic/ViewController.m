@@ -58,6 +58,10 @@
                           };
     NSLog(@"------ dic: %@ ------",dic);
     
+    NSMutableDictionary *mutableDic = [NSMutableDictionary dictionary];
+    [mutableDic removeObjectForKey:@""];
+    [mutableDic setObject:@"object" forKey:@"key"];
+    
 }
 
 

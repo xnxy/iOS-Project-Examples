@@ -8,7 +8,7 @@
 
 #import "NSDictionary+SafeWrapper.h"
 #import "NSObject+IMPChange.h"
-#import <objc/runtime.h>
+//#import <objc/runtime.h>
 
 @implementation NSDictionary (SafeWrapper)
 
@@ -28,6 +28,7 @@
 
 - (instancetype)initWithObjects_imp:(id *)objects forKeys:(id<NSCopying> *)keys count:(NSUInteger)cnt{
     NSUInteger rightCount = 0;
+//    __autoreleasing id *
     for (NSUInteger i = 0; i < cnt; i ++) {
         if (!(keys[i] && objects[i])) {
             break;

@@ -40,6 +40,8 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
+#import "UIColor+Util.h"
+
 #define kSCREEN_WIDTH          ([UIScreen mainScreen].bounds.size.width)
 #define kSCREEN_HEIGHT         ([UIScreen mainScreen].bounds.size.height)
 
@@ -51,5 +53,18 @@
 #define kNavigationAndStatusBarHeight (kStatusBarHeight + 44.f)
 #define kWidth(x)             round((x)/(750.f)  * ([UIScreen mainScreen].bounds.size.width))
 #define kHeight(x)            round(KISIphoneX?((x) / (1334.f) *  667.f):((x) / (1334.f) * ([UIScreen mainScreen].bounds.size.height)))
+
+
+//适配iOS11 --->scrollView下移间距
+#define  KAdjustsScrollViewInsets_NO(scrollView,vc)\
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
+if (@available(iOS 11.0,*))  {\
+scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;\
+} else {\
+self.automaticallyAdjustsScrollViewInsets = NO;\
+}\
+_Pragma("clang diagnostic pop") \
+
 
 #endif /* PrefixHeader_pch */

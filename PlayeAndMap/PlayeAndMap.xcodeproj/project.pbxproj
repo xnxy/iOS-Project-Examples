@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BBA72CC259C4C0A4343025FA /* Pods_PlayeAndMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F285EC6FB6C1056C431F2848 /* Pods_PlayeAndMap.framework */; };
+		D788618E2073190800DD83EA /* VCLife.m in Sources */ = {isa = PBXBuildFile; fileRef = D788618D2073190800DD83EA /* VCLife.m */; };
+		D78C1BFD207B567E00469FCC /* LifeCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D78C1BFC207B567E00469FCC /* LifeCollectionFlowLayout.m */; };
+		D78C1C01207B5CDD00469FCC /* LifeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D78C1C00207B5CDD00469FCC /* LifeCollectionViewCell.m */; };
+		D78C1C04207B5E8A00469FCC /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D78C1C02207B5E8A00469FCC /* UIColor+Util.m */; };
+		D78C1C08207B66F700469FCC /* VCVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = D78C1C07207B66F700469FCC /* VCVideo.m */; };
+		D78C1C0C207B680B00469FCC /* VideoCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D78C1C0B207B680B00469FCC /* VideoCollectionViewFlowLayout.m */; };
+		D78C1C0F207B69E700469FCC /* VideoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D78C1C0E207B69E700469FCC /* VideoCollectionViewCell.m */; };
 		D7BD37CD206891AA000B9D8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD37CC206891AA000B9D8A /* AppDelegate.m */; };
 		D7BD37D0206891AA000B9D8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD37CF206891AA000B9D8A /* ViewController.m */; };
 		D7BD37D3206891AA000B9D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BD37D1206891AA000B9D8A /* Main.storyboard */; };
@@ -58,6 +65,20 @@
 		88F39B7359004456BF8F82F9 /* Pods-PlayeAndMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayeAndMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayeAndMap/Pods-PlayeAndMap.debug.xcconfig"; sourceTree = "<group>"; };
 		90215FAFE4FCD4CA3A765317 /* Pods-PlayeAndMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayeAndMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayeAndMap/Pods-PlayeAndMap.release.xcconfig"; sourceTree = "<group>"; };
 		D7827549206A2099000151FE /* APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		D788618C2073190800DD83EA /* VCLife.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCLife.h; sourceTree = "<group>"; };
+		D788618D2073190800DD83EA /* VCLife.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCLife.m; sourceTree = "<group>"; };
+		D78C1BFB207B567E00469FCC /* LifeCollectionFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCollectionFlowLayout.h; sourceTree = "<group>"; };
+		D78C1BFC207B567E00469FCC /* LifeCollectionFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCollectionFlowLayout.m; sourceTree = "<group>"; };
+		D78C1BFF207B5CDD00469FCC /* LifeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCollectionViewCell.h; sourceTree = "<group>"; };
+		D78C1C00207B5CDD00469FCC /* LifeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCollectionViewCell.m; sourceTree = "<group>"; };
+		D78C1C02207B5E8A00469FCC /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		D78C1C03207B5E8A00469FCC /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		D78C1C06207B66F700469FCC /* VCVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCVideo.h; sourceTree = "<group>"; };
+		D78C1C07207B66F700469FCC /* VCVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCVideo.m; sourceTree = "<group>"; };
+		D78C1C0A207B680B00469FCC /* VideoCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		D78C1C0B207B680B00469FCC /* VideoCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		D78C1C0D207B69E700469FCC /* VideoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCollectionViewCell.h; sourceTree = "<group>"; };
+		D78C1C0E207B69E700469FCC /* VideoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCollectionViewCell.m; sourceTree = "<group>"; };
 		D7BD37C8206891AA000B9D8A /* PlayeAndMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayeAndMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BD37CB206891AA000B9D8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7BD37CC206891AA000B9D8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -160,6 +181,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D788618B207318DC00DD83EA /* 优选生活 */ = {
+			isa = PBXGroup;
+			children = (
+				D788618C2073190800DD83EA /* VCLife.h */,
+				D788618D2073190800DD83EA /* VCLife.m */,
+				D78C1BFB207B567E00469FCC /* LifeCollectionFlowLayout.h */,
+				D78C1BFC207B567E00469FCC /* LifeCollectionFlowLayout.m */,
+				D78C1BFE207B5CC200469FCC /* 自定义View */,
+			);
+			path = "优选生活";
+			sourceTree = "<group>";
+		};
+		D78C1BFE207B5CC200469FCC /* 自定义View */ = {
+			isa = PBXGroup;
+			children = (
+				D78C1BFF207B5CDD00469FCC /* LifeCollectionViewCell.h */,
+				D78C1C00207B5CDD00469FCC /* LifeCollectionViewCell.m */,
+			);
+			path = "自定义View";
+			sourceTree = "<group>";
+		};
+		D78C1C05207B66CB00469FCC /* 视频列表 */ = {
+			isa = PBXGroup;
+			children = (
+				D78C1C06207B66F700469FCC /* VCVideo.h */,
+				D78C1C07207B66F700469FCC /* VCVideo.m */,
+				D78C1C0A207B680B00469FCC /* VideoCollectionViewFlowLayout.h */,
+				D78C1C0B207B680B00469FCC /* VideoCollectionViewFlowLayout.m */,
+				D78C1C09207B67DF00469FCC /* 自定义View */,
+			);
+			path = "视频列表";
+			sourceTree = "<group>";
+		};
+		D78C1C09207B67DF00469FCC /* 自定义View */ = {
+			isa = PBXGroup;
+			children = (
+				D78C1C0D207B69E700469FCC /* VideoCollectionViewCell.h */,
+				D78C1C0E207B69E700469FCC /* VideoCollectionViewCell.m */,
+			);
+			path = "自定义View";
+			sourceTree = "<group>";
+		};
 		D7BD37BF206891AA000B9D8A = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +254,8 @@
 				D7BD37CC206891AA000B9D8A /* AppDelegate.m */,
 				D7BD37CE206891AA000B9D8A /* ViewController.h */,
 				D7BD37CF206891AA000B9D8A /* ViewController.m */,
+				D78C1C05207B66CB00469FCC /* 视频列表 */,
+				D788618B207318DC00DD83EA /* 优选生活 */,
 				D7BD383D2068CA43000B9D8A /* PlayerList */,
 				D7BD3832206897B1000B9D8A /* Player */,
 				D7BD3833206897B9000B9D8A /* Map */,
@@ -244,6 +309,8 @@
 		D7BD380D206893FD000B9D8A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D78C1C03207B5E8A00469FCC /* UIColor+Util.h */,
+				D78C1C02207B5E8A00469FCC /* UIColor+Util.m */,
 				D7BD3811206893FD000B9D8A /* UITableView+Util.h */,
 				D7BD381A206893FD000B9D8A /* UITableView+Util.m */,
 				D7BD3816206893FD000B9D8A /* UIButton+Util.h */,
@@ -318,13 +385,13 @@
 			isa = PBXGroup;
 			children = (
 				D7BD384B2068F9D1000B9D8A /* UIWindow+CurrentViewController.h */,
-				D7BD384C2068F9D1000B9D8A /* UIView+CustomControlView.h */,
-				D7BD384D2068F9D1000B9D8A /* UIViewController+ZFPlayerRotation.h */,
-				D7BD384E2068F9D1000B9D8A /* UIImageView+ZFCache.h */,
 				D7BD384F2068F9D1000B9D8A /* UIWindow+CurrentViewController.m */,
+				D7BD384C2068F9D1000B9D8A /* UIView+CustomControlView.h */,
 				D7BD38502068F9D1000B9D8A /* UIView+CustomControlView.m */,
-				D7BD38512068F9D1000B9D8A /* UIImageView+ZFCache.m */,
+				D7BD384D2068F9D1000B9D8A /* UIViewController+ZFPlayerRotation.h */,
 				D7BD38522068F9D1000B9D8A /* UIViewController+ZFPlayerRotation.m */,
+				D7BD384E2068F9D1000B9D8A /* UIImageView+ZFCache.h */,
+				D7BD38512068F9D1000B9D8A /* UIImageView+ZFCache.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -537,26 +604,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78C1BFD207B567E00469FCC /* LifeCollectionFlowLayout.m in Sources */,
 				D7BD37D0206891AA000B9D8A /* ViewController.m in Sources */,
 				D7BD38652068F9D1000B9D8A /* ZFBrightnessView.m in Sources */,
 				D7BD38602068F9D1000B9D8A /* ZFPlayerModel.m in Sources */,
 				D7BD3826206893FD000B9D8A /* NSArray+SafeWrapper.m in Sources */,
 				D7BD382B206893FD000B9D8A /* UITableView+Util.m in Sources */,
+				D78C1C0F207B69E700469FCC /* VideoCollectionViewCell.m in Sources */,
 				D7BD38642068F9D1000B9D8A /* UIViewController+ZFPlayerRotation.m in Sources */,
 				D7BD38612068F9D1000B9D8A /* UIWindow+CurrentViewController.m in Sources */,
 				D7BD38622068F9D1000B9D8A /* UIView+CustomControlView.m in Sources */,
 				D7BD383C20689968000B9D8A /* VCPlayer.m in Sources */,
+				D78C1C01207B5CDD00469FCC /* LifeCollectionViewCell.m in Sources */,
 				D7BD38632068F9D1000B9D8A /* UIImageView+ZFCache.m in Sources */,
 				D7BD386A2068F9D1000B9D8A /* MMMaterialDesignSpinner.m in Sources */,
 				D7BD37DB206891AA000B9D8A /* main.m in Sources */,
+				D78C1C04207B5E8A00469FCC /* UIColor+Util.m in Sources */,
 				D7BD3830206893FD000B9D8A /* UIButton+Util.m in Sources */,
 				D7BD38442068CB7A000B9D8A /* PlayerListCell.m in Sources */,
 				D7BD38402068CA57000B9D8A /* VCPlayerList.m in Sources */,
+				D78C1C08207B66F700469FCC /* VCVideo.m in Sources */,
 				D7BD38692068F9D1000B9D8A /* ZFPlayerView.m in Sources */,
+				D788618E2073190800DD83EA /* VCLife.m in Sources */,
 				D7BD383920689959000B9D8A /* VCMap.m in Sources */,
 				D7BD386B2068F9D1000B9D8A /* ASValueTrackingSlider.m in Sources */,
 				D7BD38672068F9D1000B9D8A /* ASValuePopUpView.m in Sources */,
 				D7BD37CD206891AA000B9D8A /* AppDelegate.m in Sources */,
+				D78C1C0C207B680B00469FCC /* VideoCollectionViewFlowLayout.m in Sources */,
 				D7BD38682068F9D1000B9D8A /* ZFPlayerControlView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -105,4 +105,29 @@
     method_exchangeImplementations(safeMethod,sysMethod);
 }
 
+#pragma mark ---
+#pragma mark --- 给系统类动态添加属性 ---
+
+- (void)setName:(NSString *)name{
+    /*
+     objc_setAssociatedObject 将某个值跟某个对象关联起来，将某个值存储到某个对象中。
+     object: 给哪个对象添加属性
+     key:属性的名称
+     value: 属性值
+     policy:保存策略
+     */
+//    objc_setAssociatedObject(<#id  _Nonnull object#>, <#const void * _Nonnull key#>, <#id  _Nullable value#>, <#objc_AssociationPolicy policy#>)
+    objc_setAssociatedObject(self, @"name", name, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSString *)name{
+    /*
+     object:对象
+     key:属性的名称
+     */
+//    objc_getAssociatedObject(<#id  _Nonnull object#>, <#const void * _Nonnull key#>)
+    return objc_getAssociatedObject(self, @"name");
+}
+
+
 @end

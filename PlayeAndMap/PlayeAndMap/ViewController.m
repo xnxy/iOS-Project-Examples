@@ -72,6 +72,7 @@ static NSString* TableViewCellIdentifier1 = @"TableViewCellIdentifier1";
         [_dataAry addObject:@"VCPlayer"];
         [_dataAry addObject:@"VCPlayerList"];
         [_dataAry addObject:@"VCMap"];
+        [_dataAry addObject:@"VCLife"];
     }
     return _dataAry;
 }

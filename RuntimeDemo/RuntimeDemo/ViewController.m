@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+Runtime.h"
 
 @interface ViewController ()
+
+@property (nonatomic, copy)NSString *str;
 
 @end
 
@@ -18,6 +21,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"Hello world!");
+    
+    NSObject *object = [NSObject new];
+    object.name = @"测试";
+    
+    NSLog(@"----:%@----",object.name);
+    
+    NSMutableArray *ary = [NSObject propertiesInfoWithInstance:self];
+    
+    NSLog(@"-----:%@-----",ary);
+    
 }
 
 
